@@ -174,10 +174,9 @@
 	h1{
 		text-align: center;
 		font-weight: 800;
-		color: #5d5d5d;
+		color: #333333;
 		letter-spacing: 0.225em;
 		text-transform: uppercase;
-		text-align: center;
 		font-size: 85px;
 		line-height: 1.5;
 		margin: 10px;
@@ -186,6 +185,18 @@
 	h1:hover{
 		color: white;
 		}
+
+		.h2{
+		text-align: center;
+		font-weight: 800;
+		color: #333333;
+		letter-spacing: 0.225em;
+		font-size: 25px;
+		line-height: 1.5;
+		margin: 10px;
+		vertical-align: center;
+		}
+	
 	p {
 		font-color: #5d5d5d;
 	  	font-size: 1.5 rem;
@@ -196,11 +207,52 @@
       background-color: transparent;
       padding: 5px;
       color: #5d5d5d;
-      border-radius: 5px;
     	}
   	a:hover{
         color: white;
       }
+
+    .hl{
+    	text-align: center;
+    }
+
+    .hl a {
+	  display: inline-block;
+	  position: relative;
+	  color: #5d5d5d;
+	  text-decoration: none;
+	  padding: 0.2em 0.05em;
+	  border-bottom: 2px solid #5d5d5d;
+	}
+
+	.hl a:hover {
+	  color: #efefef;
+	}
+
+	.hl a:after {
+	  content: '';
+	  display: block;
+	  position: absolute;
+	  top: 100%;
+	  right: 0;
+	  bottom: 0;
+	  left: 0;
+	  background: #5d5d5d;
+	  z-index: -1;
+	  transition: all 0.1s cubic-bezier(0.000, 0.590, 1.000, 0.260);
+	}
+
+	.hl a:hover:after {
+	  content: '';
+	  display: block;
+	  position: absolute;
+	  top: 0;
+	  right: 0;
+	  bottom: 0;
+	  left: 0;
+	  background: #5d5d5d;
+	  z-index: -1;
+	}
 /*========================
 	Flexboxes
 ==========================*/
@@ -214,7 +266,7 @@
     	flex:1;
    	 	min-height: 0px; 
 			}
-  	.main-box/*not blurry*/, .blurry-box,.box  {
+  	.main-box, .blurry-box,.box  {
 		top:136;
 		background-color:#transparent /*light green #38C5B9*/;
 		margin: 0 auto;
@@ -246,7 +298,7 @@
 		background-color:transapent/*161618*/;
 	  }
 
-	button {
+	.button {
 	  color:#454545;/*font colour*/
 	  background:transparent;
 	  border-width:2px;
@@ -255,11 +307,9 @@
 	  position:relative;
 	  margin:1em;display:inline-block;
 	  padding:0.5em 1em;
-	  transition:all 0.3s ease-in-out;
-	  text-align:center;
-	  font-family:comfortaa;
-	  font-weight:bold}
-	button:before, button:after {
+	  transition:all 0.3s ease-in-out;}
+
+	.button:before, .button:after {
 	  content:'';
 	  display:block;
 	  position:absolute;
@@ -268,33 +318,35 @@
 	  border-style:solid;
 	  width:1em;
 	  height:1em;
-	  transition:all 0.3s ease-in-out}
-	button:before {
+	  transition:all 0.3s ease-in-out;}
+	  
+	.button:before {
 		top:-6px;
 		left:-6px;
 		border-width:2px 0 0 2px;
 		z-index:5;}
-	button:after {
+	
+	.button:after {
 		bottom:-6px;
 		right:-6px;
 		border-width:0 2px 2px 0;}
-	button:hover:before, button:hover:after {
+
+	.button:hover:before, .button:hover:after {
 		width:calc(100% + 12px);/*corners of the box touch each other*/
-	  	height:calc(100% + 12px);border-color:#fff}
-	button:hover {
+	  	height:calc(100% + 12px);border-color:#fff;}
+
+	.button:hover {
 		color:#353535;
 		background-color:#fff;
-		border-color:#fff}
+		border-color:#fff;}
 
-	.panel {
+
+
+	.button a {
 	  	text-align:center;
 		position:relative;
 		margin:0;}
 
-	.pink button {color:linear-gradient(60deg, #f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82);border-color:#linear-gradient(60deg, #f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82);}
-	.pink button:before, .pink button:after  {border-color:linear-gradient(60deg, #f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82);}
-	.pink button:hover:before, .pink button:hover:after {border-color:linear-gradient(60deg, #f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82);}
-	.pink button:hover {color:#fff;background-color:linear-gradient(60deg, #f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82);border-color:linear-gradient(60deg, #f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82);}
 /*========================
 	Flexbox properties
 ==========================*/
