@@ -1,90 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Lato');
-.container {
-        padding: 20px;
-        margin: 0 auto;
-        position: relative;
-        z-index: 1;}
 
-#header {
-        height: 100vh;
-        padding: 0;
-        background:linear-gradient(45deg,#63E2FF, #B066FE);}
-
-    #header .container {
-        height: 100vh;}
-
-    .main-heading {
-    font-size: 60px;
-    margin-top: 0;
-    margin-bottom: 0.2em;
-    line-height: 0.9em;
-    opacity: 0;
-    -webkit-animation: fadeInAndUp 0.7s 0.6s forwards;
-    animation: fadeInAndUp 0.7s 0.6s forwards;
-    }
-
-    .main-subheading {
-        float: right;
-        line-height: 1.2em;
-        opacity: 0;
-        -webkit-animation: fadeInAndUp 0.7s 0.7s forwards;
-        animation: fadeInAndUp 0.7s 0.7s forwards;
-        }
-
-    .logo-container {
-        -webkit-animation: fadeInAndUp 0.7s ease-out forwards;
-        animation: fadeInAndUp 0.7s ease-out forwards;
-        -webkit-transform: translateY(50%);
-        -ms-transform: translateY(50%);
-        transform: translateY(50%);
-        opacity: 0;
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 80%;
-        height: 100vh;
-        }
-
-    .logo {
-        font-family:"Lato";
-        height: 83vh;
-        font-weight: bold;
-        font-size: 50vh;
-        padding-top: 40vh;
-        position: absolute;
-        top: 7vh;
-        left: 50%;
-        -webkit-transform: translateX(-75%) rotateZ(-30deg);
-        -ms-transform: translateX(-75%) rotateZ(-30deg);
-        transform: translateX(-75%) rotateZ(-30deg);
-        pointer-events: none;
-        -webkit-user-select: none;
-        -moz-user-select: none;
-        -ms-user-select: none;
-        user-select: none;
-        text-shadow: -7px 9px 30px rgba(0,0,0,0.5), 2px 2px 61px rgba(255,255,255,0.8);
-        text-shadow: 2px 2px 61px rgba(255,255,255,0.8);}
-
-         @media (max-width: 800px) and (max-height: 750px) {
-        .logo {
-            -webkit-transform: translateX(-95%) rotateZ(-30deg);
-            -ms-transform: translateX(-95%) rotateZ(-30deg);
-            transform: translateX(-95%) rotateZ(-30deg);
-        }
-    }
-    @media (max-aspect-ratio: 1/1) and (max-width: 700px) {
-        .logo {
-            font-size: 46vh;
-            top: 0;
-            left: 50%;
-            -webkit-transform: translateX(-15%) rotateZ(-30deg) translateY(-30%);
-            -ms-transform: translateX(-15%) rotateZ(-30deg) translateY(-30%);
-            transform: translateX(-15%) rotateZ(-30deg) translateY(-30%);
-        }
-        header {
-            top: 60%;
-        }
-    }
 body { 
   background: #edebe4;
 }
@@ -175,7 +90,7 @@ nav::before {
   bottom: -10px;
   left: -10px;
   right: 0;
-  background: rgba(162, 183, 190, .8);
+  background: linear-gradient(45deg,#FFFFC7 , #00B7FF);
   transform: rotateY(90deg);
   transition: transform 350ms;
   transform-origin: 0 0;
@@ -298,7 +213,6 @@ html,body,nav{
 
 	body {	
 		overflow-x: hidden;	
-    	background-color: ;
 		width: 100wh;
 		height: 90vh;
 		color: #fff;
@@ -369,8 +283,13 @@ html,body,nav{
 		margin: 10px;
 		vertical-align: center;
 		}
+h2{
+	color: #333333;
+	font-weight: 700;
+	font-size: 25px;
+}
 	h1:hover{
-		color: white;
+		color: #51e6a6;
 		}
 	
 	p {
@@ -388,17 +307,42 @@ html,body,nav{
 	Flexboxes
 ==========================*/
 	.content-wrap /*entire section*/ {
-	  	height: 100vh;
 	  	top: 0;
 	  	width: 80%;
 	  	margin:auto;
 	  	display: flex;
 	  	flex-wrap: wrap;
     	flex:1;
-   	 	min-height: 0px; 
+   	 	min-height: 100%; 
 			}
+.demo-wrap {
+  height: 100%;
+  width: 80%;
+  margin: 0 auto;
+  border-radius: 5px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.about__intro {
+    border-left: 2px solid;
+		border-color:#333333;
+    padding-left: 2.2em;
+    margin-bottom: 1em;
+    max-width: 25em;
+}
+.about__intro p{
+	color:#333333;
+}
+
+.about__intro a{
+	color:#333333;
+}
+
+.about__intro a:hover{
+	color: #51e6a6;
+}
   	.main-box, .blurry-box,.box  {
-		top:136;
 		background-color:#transparent /*light green #38C5B9*/;
 		margin: 0 auto;
 	  	background-color:transparent;
@@ -407,7 +351,7 @@ html,body,nav{
 		justify-content: center;
 		align-items: center;
 	  	min-height: 0px; 
-	  	height:60px;
+	  	height:80px;
 	  	position:relative;
 		}
 	.blurry-box {
@@ -422,10 +366,10 @@ html,body,nav{
     	flex:1;
     	position:relative;
 		}
-	.box p,.main-box p, .blurry-box p{
-		  color:#5d5d5d;
+	.box p,.main-box p, .blurry-box p, .demo-wrap p{
+		  color:#333333;
 		  }
-	.main-box p{
+	.main-box p, {
 		display: none;
 		font-weight: 800;
 		color: #333333;
@@ -484,7 +428,7 @@ html,body,nav{
 
 	.button:hover {
 		color:#353535;
-		background-color:#fff;
+		background-color:#51e6a6;
 		border-color:#fff;}
 
 
@@ -493,140 +437,7 @@ html,body,nav{
 		position:relative;
 		margin:0;
 		visibility:hidden;}
-/* Wrapper */
 
-	.wrapper {
-		position: relative;
-	}
-
-		.wrapper > .inner {
-			padding: 5em 5em 3em 5em ;
-			max-width: 100%;
-			width: 75em;
-		}
-
-			@media screen and (max-width: 1680px) {
-
-				.wrapper > .inner {
-					padding: 4em 4em 2em 4em ;
-				}
-
-			}
-
-			@media screen and (max-width: 1280px) {
-
-				.wrapper > .inner {
-					width: 100%;
-				}
-
-			}
-
-			@media screen and (max-width: 736px) {
-
-				.wrapper > .inner {
-					padding: 3em 2em 1em 2em ;
-				}
-
-			}
-
-	
-
-		.wrapper.fullscreen {
-			display: -moz-flex;
-			display: -webkit-flex;
-			display: -ms-flex;
-			display: flex;
-			-moz-flex-direction: column;
-			-webkit-flex-direction: column;
-			-ms-flex-direction: column;
-			flex-direction: column;
-			-moz-justify-content: center;
-			-webkit-justify-content: center;
-			-ms-justify-content: center;
-			justify-content: center;
-			min-height: 100vh;
-		}
-
-			body.is-ie .wrapper.fullscreen {
-				height: 100vh;
-			}
-
-			@media screen and (max-width: 1280px) {
-
-				.wrapper.fullscreen {
-					min-height: calc(100vh - 2.5em);
-				}
-
-					body.is-ie .wrapper.fullscreen {
-						height: calc(100vh - 2.5em);
-					}
-
-			}
-
-			@media screen and (max-width: 736px) {
-
-				.wrapper.fullscreen {
-					padding: 2em 0;
-					min-height: 0;
-				}
-
-					body.is-ie .wrapper.fullscreen {
-						height: auto;
-					}
-
-			}
-
-		.wrapper.fade-up > .inner {
-			-moz-transform: translateY(0);
-			-webkit-transform: translateY(0);
-			-ms-transform: translateY(0);
-			transform: translateY(0);
-			-moz-transition: opacity 1s ease, -moz-transform 1s ease;
-			-webkit-transition: opacity 1s ease, -webkit-transform 1s ease;
-			-ms-transition: opacity 1s ease, -ms-transform 1s ease;
-			transition: opacity 1s ease, transform 1s ease;
-			opacity: 1.0;
-		}
-
-		.wrapper.fade-up.inactive > .inner, body.is-preload .wrapper.fade-up > .inner {
-			opacity: 0;
-			-moz-transform: translateY(1em);
-			-webkit-transform: translateY(1em);
-			-ms-transform: translateY(1em);
-			transform: translateY(1em);
-		}
-
-		.wrapper.fade-down > .inner {
-			-moz-transform: translateY(0);
-			-webkit-transform: translateY(0);
-			-ms-transform: translateY(0);
-			transform: translateY(0);
-			-moz-transition: opacity 1s ease, -moz-transform 1s ease;
-			-webkit-transition: opacity 1s ease, -webkit-transform 1s ease;
-			-ms-transition: opacity 1s ease, -ms-transform 1s ease;
-			transition: opacity 1s ease, transform 1s ease;
-			opacity: 1.0;
-		}
-
-		.wrapper.fade-down.inactive > .inner, body.is-preload .wrapper.fade-down > .inner {
-			opacity: 0;
-			-moz-transform: translateY(-1em);
-			-webkit-transform: translateY(-1em);
-			-ms-transform: translateY(-1em);
-			transform: translateY(-1em);
-		}
-
-		.wrapper.fade > .inner {
-			-moz-transition: opacity 1s ease;
-			-webkit-transition: opacity 1s ease;
-			-ms-transition: opacity 1s ease;
-			transition: opacity 1s ease;
-			opacity: 1.0;
-		}
-
-		.wrapper.fade.inactive > .inner, body.is-preload .wrapper.fade > .inner {
-			opacity: 0;
-		}
 /*========================
 	Flexbox properties
 ==========================*/
