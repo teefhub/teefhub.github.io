@@ -1,8 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Lato');
 
-body { 
-  background: #edebe4;
-}
+a:-webkit-any-link {
+    cursor: pointer;
+    text-decoration: none;
+    }
 #menu-button {
   border: 2px solid rgba(41, 37, 47, .3);
   background: rgba(41, 37, 47, 1);
@@ -128,7 +129,7 @@ nav li a {
   text-decoration: none;
 }
 nav li a::after {
-  content: '';
+
   position: absolute;
   left: 0;
   width: 220px;
@@ -271,6 +272,7 @@ html,body,nav{
 	.medium{
 		font-size: 1.5rem;
 		line-height: 1;
+		color: #333333;
 		}
 	h1{
 		text-align: center;
@@ -283,12 +285,12 @@ html,body,nav{
 		margin: 10px;
 		vertical-align: center;
 		}
-h2{
-	color: #333333;
-	font-weight: 700;
-	font-size: 25px;
-}
-	h1:hover{
+	h2{
+		color: #333333;
+		font-weight: 700;
+		font-size: 25px;
+	}
+		h1:hover{
 		color: #51e6a6;
 		}
 	
@@ -315,37 +317,42 @@ h2{
     	flex:1;
    	 	min-height: 100%; 
 			}
-.demo-wrap {
-  height: 100%;
-  width: 80%;
-  margin: 0 auto;
-  border-radius: 5px;
-  display: flex;
-  flex-wrap: wrap;
-}
+	.demo-wrap {
+	  height: 100%;
+	  width: 80%;
+	  margin: 0 auto;
+	  border-radius: 5px;
+	  display: flex;
+	  flex-wrap: wrap;
+	}
+/*========================
+	about__intro box
+==========================*/
+	.about__intro {
+	    border-left: 2px solid;
+			border-color:#333333;
+	    padding-left: 2.2em;
+	    margin-bottom: 1em;
+	    max-width: 25em;
+	}
 
-.about__intro {
-    border-left: 2px solid;
-		border-color:#333333;
-    padding-left: 2.2em;
-    margin-bottom: 1em;
-    max-width: 25em;
-}
-.about__intro p{
-	color:#333333;
-}
+	.about__intro p{
+		color:#333333;
+	}
 
-.about__intro a{
-	color:#333333;
-}
+	.about__intro a{
+		color:#333333;
+	}
 
-.about__intro a:hover{
-	color: #51e6a6;
-}
+	.about__intro a:hover{
+		color: #51e6a6;
+	}
+/*========================
+	Flexboxes
+==========================*/
   	.main-box, .blurry-box,.box  {
-		background-color:#transparent /*light green #38C5B9*/;
+		background-color:transparent /*light green #38C5B9*/;
 		margin: 0 auto;
-	  	background-color:transparent;
 		padding: 10px 10px;
 		display: flex;
 		justify-content: center;
@@ -360,15 +367,46 @@ h2{
 	   	border-radius: 75px; 
 	   	flex:4;
 		}
+
+/*========================
+	smaller boxes
+==========================*/
 	.box {
 	  	border-radius: 5px; 
 	  	margin: 5px;
     	flex:1;
     	position:relative;
+	  	background-color:transparent;
+		padding: 10px 10px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	  	min-height: 0px; 
+	  	height:80px;
+	  	position:relative;
 		}
 	.box p,.main-box p, .blurry-box p, .demo-wrap p{
 		  color:#333333;
 		  }
+
+	.two{
+  		background-color: transparent;
+  		width: 100%;
+  		height:100%;
+  		text-align: left;
+		}
+
+		.two a{
+		  color:#333333;
+		  }
+
+		  .two a:hover{
+		  color:#454545;
+		  }
+
+/*========================
+	main boxes
+==========================*/
 	.main-box p, {
 		display: none;
 		font-weight: 800;
@@ -377,15 +415,6 @@ h2{
 		font-size: 15px;
 		text-align: center;
 	}
-	.one {
-		background-color:transapent/*161618*/;
-	  }
-
-	.two{
-  		background-color: #6597cd;
-  		width:500px;
-  		height:500px;
-		}
 
 	.button {
 	  color:#454545;/*font colour*/
