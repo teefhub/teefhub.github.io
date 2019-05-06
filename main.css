@@ -1,5 +1,19 @@
 @import url('https://fonts.googleapis.com/css?family=Lato');
 
+b  { display: block; width: 1000px; padding: 20px; box-sizing: border-box;
+	font: 700 25em lato; letter-spacing: -.05em;
+  
+	/* gradient */
+	//background: -webkit-linear-gradient(-45deg, rgba(107,213,255,1) 0%,rgba(255,167,61,1) 50%,rgba(21,160,3,1) 100%);
+
+	/* image */
+	background: url("http://farm8.staticflickr.com/7079/7112577355_92100116e2_b.jpg") no-repeat;
+
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	}
+
+
 a:-webkit-any-link {
     cursor: pointer;
     text-decoration: none;
