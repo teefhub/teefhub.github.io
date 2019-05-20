@@ -28,10 +28,14 @@
   }
 
   body.dark {
-    background-color: #1E2E50;/*night mode - entire background*/
+    background-color: #10152D;/*night mode - entire background*/
   }
 
-  .bgtext {
+  body.light {
+    background-color: #ECEDEF;/*night mode - entire background*/
+  }
+
+    .bgtext {
   background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
   border: 1px solid #f1f1f1;
   position: absolute;
