@@ -65,7 +65,7 @@
 
 .smfontdark{
   color: #1E2E50;
-  font-size: 1.1rem;
+  font-size: 2em;
   line-height: 1.4;
 }
 
@@ -92,10 +92,10 @@
 	overflow: hidden;
 	flex-grow: 0;
 	flex-shrink: 0;
-	padding: 50px 50px;
+	padding: 20px 20px;
 	background-color: #F5F7F3;
 	box-sizing: border-box;
-	border-radius: 10px;
+  border-radius: 10px;
 	margin: 5px;
 }
 
@@ -776,7 +776,7 @@ to their parent element
 
   @media only screen and (min-width: 540px) {
     .container {
-      width: 94%;
+      width: 100%;
     }
 
     .col-1-m {
@@ -942,7 +942,7 @@ to their parent element
 
   @media only screen and (min-width: 960px) {
     .container {
-      width: 90%;
+      width: 100%;
       max-width: 1600px;
     }
 
