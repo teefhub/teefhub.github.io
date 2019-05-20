@@ -44,11 +44,18 @@
   text-align: center;
 }
 
-  h1.bgtext{
-    color: #EFE8EE;
+.lgfont{
+  color: #EFE8EE;
   font-weight: bold;
   font-size: 5rem;
-  }
+  line-height: 1.4;
+}
+
+.smfont{
+  color: #EFE8EE;
+  font-size: 1.75rem;
+  line-height: 1.4;
+}
 
 
 
