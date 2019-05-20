@@ -1,7 +1,7 @@
 window.onload = function() {
-  $('#menu-button').on('click', function() {
-  $(document.body).toggleClass('menu-open');
+$(".menu-toggle").on('click', function() {
+  $(this).toggleClass("on");
+  $('.menu-section').toggleClass("on");
+  $("nav ul").toggleClass('hidden');
 });
 };
-
-
