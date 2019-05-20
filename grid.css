@@ -28,7 +28,7 @@
   }
 
   body.dark {
-    background-color: #2A2F41;/*night mode - entire background*/
+    background-color: #1E2E50;/*night mode - entire background*/
   }
 
   .bgtext {
@@ -59,10 +59,40 @@
 
 
 
+
+.container{
+	width: auto;
+	justify-content: space-around;
+	display: flex;
+	overflow: hidden;
+	background-color: transparent;
+	align-content: space-around;
+	align-items: center;
+	
+}
+.fd-r{
+		flex-direction: column;
+
+}
+
+.card{
+	width: 60%;
+	overflow: hidden;
+	flex-grow: 0;
+	flex-shrink: 0;
+	padding: 50px 50px;
+	background-color: #F5F7F3;
+	box-sizing: border-box;
+	border-radius: 10px;
+	margin:5px;
+}
+
+
   * {
     font-family: 'Lato';
-    font-weight: 300;
-    color: #fff;
+    font-family: Lato;
+    font-size: 1em;
+    color: #1E2E50	;
     box-sizing: border-box;
   }
 /* Font */
@@ -81,8 +111,9 @@
   }
 
   p {
-    font-size: 1.75rem;
-    line-height: 1.6;
+    font-family: Lato;
+	font-size: 1.1em;
+	color: #1E2E50	;
     }
 
   p.x-large {
@@ -106,9 +137,9 @@
   }
 
   li {
-    list-style: none;
-    font-size: 1rem;
-    line-height: 1.5;
+    font-family: Lato;
+    font-size: 1.1em;
+    color: #1E2E50	;
   }
 
   li.large {
