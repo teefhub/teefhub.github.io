@@ -67,13 +67,14 @@ input, select, textarea {
 	-ms-appearance: none;
 	appearance: none;
 }
-
-/* Basic */
-
 	html {
 		box-sizing: border-box;
 	}
 
+
+	th{
+		
+	}
 	*, *:before, *:after {
 		box-sizing: inherit;
 	}
