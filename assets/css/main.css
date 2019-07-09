@@ -3342,7 +3342,7 @@ input, select, textarea {
 					}
 
 			.tiles article.style11 > .image:before {
-				background-color: #f2849e;
+				background-color: #cfc6c8;
 			}
 
 			.tiles article.style2 > .image:before {
@@ -3354,7 +3354,7 @@ input, select, textarea {
 			}
 
 			.tiles article.style4 > .image:before {
-				background-color: #c75b9b;
+				background-color: #F0EEE6;
 			}
 
 			.tiles article.style5 > .image:before {
@@ -3740,10 +3740,10 @@ input, select, textarea {
 		}
 
 		#banner:after {
-			background-image: -moz-linear-gradient(top, rgba(23, 24, 32, 0.95), rgba(23, 24, 32, 0.95)), url("images/overlay.png");;
-			background-image: -webkit-linear-gradient(top, rgba(23, 24, 32, 0.95), rgba(23, 24, 32, 0.95)), url("images/overlay.png");;
-			background-image: -ms-linear-gradient(top, rgba(23, 24, 32, 0.95), rgba(23, 24, 32, 0.95)), url("images/overlay.png");;
-			background-image: linear-gradient(top, rgba(23, 24, 32, 0.95), rgba(23, 24, 32, 0.95)), url("images/overlay.png");;
+			background-image: -moz-linear-gradient(top,#111526, #111526);
+			background-image: -webkit-linear-gradient(top,#111526, #111526);
+			background-image: -ms-linear-gradient(top,#111526, #111526);
+			background-image: linear-gradient(top,#111526, #111526);
 			content: '';
 			display: block;
 			height: 100%;
