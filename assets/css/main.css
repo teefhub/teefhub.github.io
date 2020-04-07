@@ -204,7 +204,7 @@ input, select, textarea {
 	}
 
 	#bg {
-		/*
+		/**/
 		-moz-backface-visibility: hidden;
 		-webkit-backface-visibility: hidden;
 		-ms-backface-visibility: hidden;
@@ -212,13 +212,12 @@ input, select, textarea {
 		-moz-transform: translate3d(0,0,0);
 		-webkit-transform: translate3d(0,0,0);
 		-ms-transform: translate3d(0,0,0);
-		transform: translate3d(0,0,0);*/
-		background: #61b2d8;
-		background-image: linear-gradient(135deg, #61b2d8, #ffc5ca 100% );
-		-moz-animation: bg 10s linear infinite;
-		-webkit-animation: bg 10s linear infinite;
-		-ms-animation: bg 10s linear infinite;
-		animation: bg 10s linear infinite;
+		transform: translate3d(0,0,0);
+		background-image: linear-gradient(135deg, #61b2d8 0%, #f9a4f2 100% ,#61b2d8 0%);
+				-moz-animation: bg 10s ease-in-out infinite;
+		-webkit-animation: bg ease-in-out infinite;
+		-ms-animation: bg 10s ease-in-out infinite;
+		animation: bg 10s ease-in-out infinite;
 		height: 100%;
 		left: 0;
 		opacity: 1;
