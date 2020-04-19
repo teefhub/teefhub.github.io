@@ -534,7 +534,7 @@ h5{
     background:#61b2d8;
   background:-moz-linear-gradient(-55deg, #61b2d8 0%, #f9a4f2 100%);
   background:-webkit-linear-gradient(-55deg, #61b2d8 0%, #f9a4f2 100%) ;
-  background:linear-gradient(135deg, #61b2d8 0%, #f9a4f2 100%);
+  background:linear-gradient(135deg,#61b2d8 0%, #f9a4f2 100% ,#61b2d8 0%);
 }
 
   .text-centre{
@@ -570,14 +570,7 @@ h5{
     text-decoration: none;
     color: #00bfff;
   }
-  .link-blog {
-    color: #f36f24;
-  }
-  .link-blog:hover,
-  .link-blog:focus {
-    text-decoration: none;
-    color: #d8560c;
-  }
+ 
   .link-linkedin {
     color: #007bb6;
   }
@@ -594,14 +587,7 @@ h5{
     text-decoration: none;
     color: #0986ca;
   }
-  .link-instagram {
-    color: #e4405f;
-  }
-  .link-instagram:hover,
-  .link-instagram:focus {
-    text-decoration: none;
-    color: #d31e40;
-  }
+  
   .link-stackoverflow {
     color: #8e8e92;
   }
@@ -618,14 +604,7 @@ h5{
     text-decoration: none;
     color: #389bd6;
   }
-  .link-lastfm {
-    color: #d12127;
-  }
-  .link-lastfm:hover,
-  .link-lastfm:focus {
-    text-decoration: none;
-    color: #a51a1f;
-  }
+
   .link-googleplus {
     color: #dd4b39;
   }
@@ -643,6 +622,16 @@ h5{
     color: #c23321;
   }
 
+  .link-discord {
+    color: #738ADB;
+  }
+  .link-discord:hover,
+  .link-discord:focus {
+    text-decoration: none;
+    color: #738ADB;
+  }
+
+
   .link-steam {
     color: #01325f;
   }
@@ -659,30 +648,9 @@ h5{
     text-decoration: none;
     color: #8c0717;
   }
-  .link-gratipay {
-    color: #630;
-  }
-  .link-gratipay:hover,
-  .link-gratipay:focus {
-    text-decoration: none;
-    color: #331a00;
-  }
-  .link-vimeo {
-    color: #17b3e8;
-  }
-  .link-vimeo:hover,
-  .link-vimeo:focus {
-    text-decoration: none;
-    color: #128fba;
-  }
-  .link-behance {
-    color: #2c98cf;
-  }
-  .link-behance:hover,
-  .link-behance:focus {
-    text-decoration: none;
-    color: #2379a5;
-  }
+  
+ 
+  
   .link-codepen {
     color: #1c1c1c;
   }
@@ -691,14 +659,7 @@ h5{
     text-decoration: none;
     color: #020202;
   }
-  .link-foursquare {
-    color: #fa4778;
-  }
-  .link-foursquare:hover,
-  .link-foursquare:focus {
-    text-decoration: none;
-    color: #f91554;
-  }
+
   .link-reddit {
     color: #545454;
   }
@@ -707,22 +668,7 @@ h5{
     text-decoration: none;
     color: #3b3b3b;
   }
-  .link-spotify {
-    color: #acd200;
-  }
-  .link-spotify:hover,
-  .link-spotify:focus {
-    text-decoration: none;
-    color: #829f00;
-  }
-  .link-tumblr {
-    color: #2d4661;
-  }
-  .link-tumblr:hover,
-  .link-tumblr:focus {
-    text-decoration: none;
-    color: #1d2d3e;
-  }
+
   .link-dribbble {
     color: #ce366f;
   }
@@ -739,70 +685,7 @@ h5{
     text-decoration: none;
     color: #3b5687;
   }
-  .link-angellist {
-    color: black;
-  }
-  .link-angellist:hover,
-  .link-angellist:focus {
-    text-decoration: none;
-    color: #000000;
-  }
-  .link-bitbucket {
-    color: #205081;
-  }
-  .link-bitbucket:hover,
-  .link-bitbucket:focus {
-    text-decoration: none;
-    color: #163758;
-  }
-  .link-hackernews {
-    color: #ff6600;
-  }
-  .link-hackernews:hover,
-  .link-hackernews:focus {
-    text-decoration: none;
-    color: #cc5200;
-  }
-  .link-exercism {
-    color: #d81d4e;
-  }
-  .link-exercism:hover,
-  .link-exercism:focus {
-    text-decoration: none;
-    color: #ab173e;
-  }
-  .link-blogger {
-    color: #FF9234;
-  }
-  .link-blogger:hover,
-  .link-blogger:focus {
-    text-decoration: none;
-    color: #ff7701;
-  }
-  .link-medium {
-    color: #00AB6C;
-  }
-  .link-medium:hover,
-  .link-medium:focus {
-    text-decoration: none;
-    color: #00784c;
-  }
-  .link-flickr {
-    color: black;
-  }
-  .link-flickr:hover,
-  .link-flickr:focus {
-    text-decoration: none;
-    color: #000000;
-  }
-  .link-telegram {
-    color: #3BABDD;
-  }
-  .link-telegram:hover,
-  .link-telegram:focus {
-    text-decoration: none;
-    color: #2291c3;
-  }
+
   .card-skills {
     position: relative;
   }

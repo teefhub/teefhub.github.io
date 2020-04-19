@@ -1,5 +1,4 @@
-
-  $(function () {
+$(function () {
 var toggleFloatingMenu = function() {
   $( '.js-floating-nav' ).toggleClass( 'is-visible' );
   $( '.js-floating-nav-trigger' ).toggleClass( 'is-open' );
