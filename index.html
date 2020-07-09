@@ -2,32 +2,37 @@
 
 <html>
 	<head>
-		<title>tilee</title>
+		<title>Tiff Lee</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
-		<script src="assets/main.js"></script>
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
-
 	<body class="is-preload">
 		<div id="wrapper">
 			<div id="bg"></div>
+			<div id="overlay"></div>
 			<div id="main">
-				
+
 					<header id="header">
-					</br>
-				</br></br>
 						<h1>Tiffany Lee</h1>
 						<p>Aspiring Enterprise Architect</p>
 						<nav>
 							<ul>
-								<li><button class="btn"><a href="/about/about.html"  target="_blank">About</a></button></li>
-								<li><button class="btn"><a href="/about/resume/resume.html" target="_blank">Resume</a></button></li>
+								<li><a class="fs-2x socials link-linkedin fab fa-linkedin-in" href="https://www.linkedin.com/in/tiffylee/" target="_blank" data-toggle="tooltip" title="LinkedIn"></a></li>
+                				<li><a class="fs-2x socials link-github fab fa-github" href="https://github.com/tiffylee" target="_blank" data-toggle="tooltip" title="Github"></a></li>
+								<li><a class="fs-2x socials link-youtube fab fa-youtube" href="https://www.youtube.com/channel/UCRQWdAO0_YlzERBVSC7HnmA/" target="_blank" data-toggle="tooltip" title="Youtube"></a></li>
+								<li><a class="fs-2x socials link-steam fab fa-steam" href="https://steamcommunity.com/id/YNAFFiT" target="_blank" data-toggle="tooltip" title="Steam"></a></li>                	
 							</ul>
 						</nav>
 					</header>
 
 			</div>
 		</div>
+		<script>
+			window.onload = function() { document.body.classList.remove('is-preload'); }
+			window.ontouchmove = function() { return false; }
+			window.onorientationchange = function() { document.body.scrollTop = 0; }
+		</script>
 	</body>
 </html>
