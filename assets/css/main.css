@@ -74,14 +74,7 @@ ol, ul {
 
 	#bg {
 		/**/
-		-moz-backface-visibility: hidden;
-		-webkit-backface-visibility: hidden;
-		-ms-backface-visibility: hidden;
-		backface-visibility: hidden;
-		-moz-transform: translate3d(0,0,0);
-		-webkit-transform: translate3d(0,0,0);
-		-ms-transform: translate3d(0,0,0);
-		transform: translate3d(0,0,0);
+		
 		background-image: linear-gradient(135deg, #61b2d8 0%, #f9a4f2 100% ,#61b2d8 0%);
 		height: 100%;
 		left: 0;
